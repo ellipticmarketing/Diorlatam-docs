@@ -28,7 +28,7 @@ La solicitud debe incluir un encabezado de autorización con el token de acceso 
 
 Ejemplo:
 
-```http request
+```HTTP
 POST /api/integrations/diorlatam/v1/login HTTP/1.1
 Host: www.diorlatam.com
 Content-Type: application/json
