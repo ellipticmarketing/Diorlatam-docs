@@ -14,6 +14,7 @@ Para solicitar una URL de inicio de sesión, se debe enviar una solicitud POST c
 
 - name: string
 - email: string
+- redirect: string (opciones: `dam`, `email-catalog`, `material-orders`)
 - countries: array []
     - id: string
     - name: string
