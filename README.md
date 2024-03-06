@@ -30,7 +30,7 @@ La solicitud debe incluir un encabezado de autorización con el token de acceso 
 Ejemplo:
 
 ```HTTP
-POST /api/integrations/diorlatam/v1/login HTTP/1.1
+POST /api/integrations/diorlatina/v1/login HTTP/1.1
 Host: www.diorlatam.com
 Content-Type: application/json
 Authorization: Bearer <token>
