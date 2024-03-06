@@ -39,6 +39,7 @@ Authorization: Bearer <token>
 {
     "name": "John Doe",
     "email": "john.doe@test.test",
+    "redirect": "dam",
     "countries": [
         {
             "id": "7",
