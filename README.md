@@ -21,9 +21,12 @@ Para solicitar una URL de inicio de sesión, se debe enviar una solicitud POST c
     - clients: array []
         - id: string
         - name: string
-        - points_of_sale: array []
+        - retailers: []
             - id: string
             - name: string
+            - points_of_sale: array []
+                - id: string
+                - name: string
 
 La solicitud debe incluir un encabezado de autorización con el token de acceso del DAM.
 
@@ -33,6 +36,7 @@ Ejemplo:
 POST /api/integrations/diorlatina/v1/login HTTP/1.1
 Host: www.diorlatam.com
 Content-Type: application/json
+Accept: application/json
 Authorization: Bearer <token>
 ```
 ```json
@@ -48,14 +52,20 @@ Authorization: Bearer <token>
                 {
                     "id": "45",
                     "name": "Aromas",
-                    "points_of_sale": [
+                    "retailers": [
                         {
-                            "id": "42",
-                            "name": "Aromas Casa Zonia Comercio"
-                        },
-                        {
-                            "id": "43",
-                            "name": "Aromas Perfumería Glamour"
+                            "id": "485",
+                            "name": "Aromas Perfumería",
+                            "points_of_sale": [
+                                {
+                                    "id": "42",
+                                    "name": "Aromas Casa Zonia Comercio"
+                                },
+                                {
+                                    "id": "43",
+                                    "name": "Aromas Perfumería Glamour"
+                                }
+                            ]
                         }
                     ]
                 }
